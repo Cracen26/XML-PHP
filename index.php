@@ -17,8 +17,139 @@
             </a>
         </nav>
     </div>
-    <div class="container bg-light">
-        
+    <br>
+    <div class="container">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Programme cinema
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6">
+                            <label for="topic" >Objet</label>
+                            <input type="text" id="topic" class="form-control"  name="topic">
+                            </div>
+
+                            <div class="form-group col-md-6 col-sm-6">
+                            <label for="deadline" >Echéance</label>
+                            <input type="date" id="deadline" class="form-control" name="deadline">
+                            </div>
+                            <div class="form-group col-md-6 col-sm-6">
+                            <label for="condition" >Conditions</label>
+                            <input type="text" id="condition" class="form-control"  name="condition">
+                            </div>
+
+                            <div class="form-group col-md-6 col-sm-6">
+                            <label for="note" >Note</label>
+                            <input type="text" id="note" class="form-control"  name="note">
+                            </div>
+
+                            <div class="form-group col-md-6 col-sm-6">
+                            <label for="depart" >Lieu de départ</label>
+                            <input type="text" id="depart" class="form-control"  name="departure">
+                            </div>
+
+                            <div class="form-group col-md-6 col-sm-6">
+                            <label for="arrive" >Destination</label>
+                            <input type="text" id="arrive" class="form-control"  name="arrival">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Description restaurant
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                <form action="">
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6">
+                            <label for="topic" >Objet</label>
+                            <input type="text" id="topic" class="form-control"  name="topic">
+                            </div>
+
+                            <div class="form-group col-md-6 col-sm-6">
+                            <label for="deadline" >Echéance</label>
+                            <input type="date" id="deadline" class="form-control" name="deadline">
+                            </div>
+                            <div class="form-group col-md-6 col-sm-6">
+                            <label for="condition" >Conditions</label>
+                            <input type="text" id="condition" class="form-control"  name="condition">
+                            </div>
+
+                            <div class="form-group col-md-6 col-sm-6">
+                            <label for="note" >Note</label>
+                            <input type="text" id="note" class="form-control"  name="note">
+                            </div>
+
+                            <div class="form-group col-md-6 col-sm-6">
+                            <label for="depart" >Lieu de départ</label>
+                            <input type="text" id="depart" class="form-control"  name="departure">
+                            </div>
+
+                            <div class="form-group col-md-6 col-sm-6">
+                            <label for="arrive" >Destination</label>
+                            <input type="text" id="arrive" class="form-control"  name="arrival">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Examen
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                <form action="">
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6">
+                            <label for="topic" >Objet</label>
+                            <input type="text" id="topic" class="form-control"  name="topic">
+                            </div>
+
+                            <div class="form-group col-md-6 col-sm-6">
+                            <label for="deadline" >Echéance</label>
+                            <input type="date" id="deadline" class="form-control" name="deadline">
+                            </div>
+                            <div class="form-group col-md-6 col-sm-6">
+                            <label for="condition" >Conditions</label>
+                            <input type="text" id="condition" class="form-control"  name="condition">
+                            </div>
+
+                            <div class="form-group col-md-6 col-sm-6">
+                            <label for="note" >Note</label>
+                            <input type="text" id="note" class="form-control"  name="note">
+                            </div>
+
+                            <div class="form-group col-md-6 col-sm-6">
+                            <label for="depart" >Lieu de départ</label>
+                            <input type="text" id="depart" class="form-control"  name="departure">
+                            </div>
+
+                            <div class="form-group col-md-6 col-sm-6">
+                            <label for="arrive" >Destination</label>
+                            <input type="text" id="arrive" class="form-control"  name="arrival">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
     </div>
     
     
