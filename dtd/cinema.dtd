@@ -1,0 +1,20 @@
+<!ELEMENT films (film*)>
+<!ELEMENT film (acteurs,annee,note?,synopsis,projections)>
+<!ATTLIST film
+    id ID #REQUIRED
+    nom CDATA #REQUIRED
+    genre CDATA #REQUIRED
+    duree CDATA #REQUIRED
+    realisateur CDATA #REQUIRED
+    langue CDATA #REQUIRED
+>
+<!ELEMENT acteurs (acteur+)>
+<!ELEMENT acteur (#PCDATA)>
+<!ELEMENT annee (#PCDATA)>
+<!ELEMENT note EMPTY>
+<!ATTLIST note presse CDATA spectateurs CDATA>
+<!ELEMENT synopsis (#PCDATA)>
+<!ELEMENT projections (projection)+>
+<!ELEMENT projection (horaire)+>
+<!ATTLIST projection jour CDATA #REQUIRED>
+<!ELEMENT horaire (#PCDATA)>
