@@ -1,0 +1,8 @@
+<!ELEMENT examen (questions)>
+<!ATTLIST examen code NMTOKEN #REQUIRED>
+<!ATTLIST examen titre CDATA #REQUIRED>
+<!ATTLIST examen mois (Ja|Fe|Ma|Av|Mai|Ju|Jul|Au|Se|Oct|Nov|Dec) #REQUIRED>
+<!ATTLIST examen annee CDATA #REQUIRED>
+<!ELEMENT questions  (question,question,question,question,question,question,question,question,question,question,question?)>
+<!ELEMENT question (partie)+>
+<!ELEMENT partie (#PCDATA|partie)*>
