@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE films SYSTEM "./cinema.dtd">
+<films>
+    <film id="F0" nom="Les brigades du tigre" genre="Policier" duree="2h 5min" realisateur="Jerome Cornuau" lang="VF">
+        <acteurs>
+            <acteur>C.Cornillac</acteur>
+            <acteur>D.Kruger</acteur>
+            <acteur>E.Baer</acteur>
+        </acteurs>
+        <annee>2005</annee>
+        <note presse="3/5" spectateurs="4/5" />
+        <synopsis>Les aventures du commissaire Valentin et des inspecteurs Terrasson et Pujol,
+            membres des Brigades mobiles, corps spécial de la police française créé avant
+            la Première Guerre mondiale.
+        </synopsis>
+        <projections>
+            <projecion jour = "Mer, Sam">
+                <horaire>14:00</horaire>
+                <horaire>16:40</horaire>
+                <horaire>19:40</horaire>
+            </projecion>
+            <projecion jour = "Jeu, Ven, Lun, Mar">
+                <horaire>14:00</horaire>
+                <horaire>19:40</horaire>
+                <horaire>22:10</horaire>
+            </projecion>
+            <projecion jour = "Dim">
+                <horaire>10:20</horaire>
+                <horaire>14:00</horaire>
+                <horaire>16:40</horaire>
+                <horaire>20:20</horaire>
+            </projecion>
+        </projections>
+    </film>
+
+    <!-- <film id="F1" nom="Black Panther" genre="Action/Aventure " duree="2h 15m" realisateur="Ryan Coogler" lang="VF">
+        <acteurs>
+            <acteur>C.Boseman</acteur>
+            <acteur>M.B.Jordan</acteur>
+            <acteur>L.Nyongo</acteur>
+            <acteur>L.Wright</acteur>
+        </acteurs>
+        <annee>2018</annee>
+        <note presse="3/5" spectateurs="4/5" />
+        <synopsis>Après les événements qui se sont déroulés dans Captain America : Civil War, T'Challa revient chez lui prendre sa place sur le trône du Wakanda, une nation africaine technologiquement très avancée mais lorsqu'un vieil ennemi resurgit, le courage de T'Challa est mis à rude épreuve, aussi bien en tant … 
+        </synopsis>
+        <projections>
+            <projecion jour = "Dim, Mer">
+                <horaire>14:00</horaire>
+                <horaire>16:40</horaire>
+                <horaire>19:40</horaire>
+            </projecion>
+            <projecion jour = "Jeu, Ven, Lun, Mar">
+                <horaire>20:00</horaire>
+                <horaire>15:40</horaire>
+                <horaire>00:10</horaire>
+            </projecion>
+            <projecion jour = "Sam">
+                <horaire>10:20</horaire>
+                <horaire>14:00</horaire>
+                <horaire>16:40</horaire>
+                <horaire>20:20</horaire>
+            </projecion>
+        </projections>
+    </film>
+
+    <film id="F2" nom="Parasite" genre="Thriller/Drame" duree="2h 12m" realisateur="Bong Joon-ho" lang="VF">
+        <acteurs>
+            <acteur>Park.Seo-joon</acteur>
+            <acteur>Park.So-dam</acteur>
+            <acteur>Choi.Woo-shik</acteur>
+        </acteurs>
+        <annee>2019</annee>
+        <note presse="4/5" spectateurs="5/5" />
+        <synopsis>Les différences de classe entre une famille pauvre et une famille aisée apparaissent au grand jour. Lorsque Ki-woo obtient un poste de tuteur chez les riches Parks, il fait en sorte que ses parents et sa soeur soient également engagés.
+        </synopsis>
+        <projections>
+            <projecion jour = "Mer, Sam">
+                <horaire>14:00</horaire>
+                <horaire>16:40</horaire>
+                <horaire>19:40</horaire>
+            </projecion>
+            <projecion jour = "Jeu, Ven, Lun, Mar">
+                <horaire>14:00</horaire>
+                <horaire>19:40</horaire>
+                <horaire>22:10</horaire>
+            </projecion>
+            <projecion jour = "Dim">
+                <horaire>10:20</horaire>
+                <horaire>14:00</horaire>
+                <horaire>16:40</horaire>
+                <horaire>20:20</horaire>
+            </projecion>
+        </projections>
+    </film>
+
+    <film id="F3" nom="Doctor Strange in the Multiverse of Madness" genre="Action/Aventure/Fantastique" duree="2h 6min" realisateur="Sam Raimi" lang="VF">
+        <acteurs>
+            <acteur>B.Cumburbatch</acteur>
+            <acteur>E.Olsen</acteur>
+            <acteur>B.Wong</acteur>
+        </acteurs>
+        <annee>2022</annee>
+        <note presse="3/5" spectateurs="4/5" />
+        <synopsis>Le Docteur Strange lance un sort interdit qui ouvre le portail du Multivers, incluant des versions alternatives de lui-même. Cette menace à l'humanité est plus puissante que les pouvoirs com... 
+        </synopsis>
+        <projections>
+            <projecion jour = "Mer, Sam">
+                <horaire>14:00</horaire>
+                <horaire>16:40</horaire>
+                <horaire>19:40</horaire>
+            </projecion>
+            <projecion jour = "Jeu, Ven, Lun, Mar">
+                <horaire>14:00</horaire>
+                <horaire>19:40</horaire>
+                <horaire>22:10</horaire>
+            </projecion>
+            <projecion jour = "Dim">
+                <horaire>10:20</horaire>
+                <horaire>14:00</horaire>
+                <horaire>16:40</horaire>
+                <horaire>20:20</horaire>
+            </projecion>
+        </projections>
+    </film>
+
+    <film id="F4" nom="Les animaux fantastiques: Les secrets de Dumbledore" genre="Action/Aventure/Fantastique" duree="2h 22min" realisateur="David Yates" lang="VF">
+        <acteurs>
+            <acteur>E.Redmayne</acteur>
+            <acteur>J.Law</acteur>
+            <acteur>E.Miller</acteur>
+        </acteurs>
+        <annee>2022</annee>
+        <note presse="3/5" spectateurs="4/5" />
+        <synopsis>Le troisième opus de la série 'Les Animaux Fantastiques et où les trouver' suit les aventures de Norbert Dragonneau.
+        </synopsis>
+        <projections>
+            <projecion jour = "Mer, Sam">
+                <horaire>14:00</horaire>
+                <horaire>16:40</horaire>
+                <horaire>19:40</horaire>
+            </projecion>
+            <projecion jour = "Jeu, Ven, Lun, Mar">
+                <horaire>14:00</horaire>
+                <horaire>19:40</horaire>
+                <horaire>22:10</horaire>
+            </projecion>
+            <projecion jour = "Dim">
+                <horaire>10:20</horaire>
+                <horaire>14:00</horaire>
+                <horaire>16:40</horaire>
+                <horaire>20:20</horaire>
+            </projecion>
+        </projections>
+    </film> -->
+</films>

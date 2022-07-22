@@ -1,0 +1,35 @@
+<?xml version='1.0' standalone='yes'?>
+<films>
+    <film id="F0" nom="Les brigades du tigre" genre="Policier" duree="2h 5min" realisateur="Jerome Cornuau" lang="VF">
+        <acteurs>
+            <acteur>C.Cornillac</acteur>
+            <acteur>D.Kruger</acteur>
+            <acteur>E.Baer</acteur>
+        </acteurs>
+        <annee>2005</annee>
+        <note presse="3/5" spectateurs="4/5" />
+        <synopsis>Les aventures du commissaire Valentin et des inspecteurs Terrasson et Pujol,
+            membres des Brigades mobiles, corps spécial de la police française créé avant
+            la Première Guerre mondiale.
+        </synopsis>
+        <projections>
+            <projecion jour = "Mer, Sam">
+                <horaire>14:00</horaire>
+                <horaire>16:40</horaire>
+                <horaire>19:40</horaire>
+            </projecion>
+            <projecion jour = "Jeu, Ven, Lun, Mar">
+                <horaire>14:00</horaire>
+                <horaire>19:40</horaire>
+                <horaire>22:10</horaire>
+            </projecion>
+            <projecion jour = "Dim">
+                <horaire>10:20</horaire>
+                <horaire>14:00</horaire>
+                <horaire>16:40</horaire>
+                <horaire>20:20</horaire>
+            </projecion>
+        </projections>
+    </film>
+</films>
+  
