@@ -15,19 +15,72 @@
             <img src="https://img.favpng.com/23/12/7/xml-icon-xml-file-format-symbol-icon-interface-icon-CiAK3h6c.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
             XML-Client
             </a>
+        
         </nav>
 </div>
+<br>
 <div class="container">
+    <div class="row text-center bg-light">
+        <h3>Cinema</h3>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="images/v.svg" class="img-fluid" alt="">
+        </div>
+        <div class="col-sm-6 bg-info" style="opacity:70%;">
+            <?php
+                if (file_exists('xml/cinema.xml')) {
+                    $xml = simplexml_load_file('xml/cinema.xml');
+                    echo $xml->film[0]->synopsis;
+                } else {
+                    exit('Echec lors de l\'ouverture du fichier test.xml.');
+                }
+            ?>
+        </div>
     
-    <?php
-        if (file_exists('xml/cinema.xml')) {
-            $xml = simplexml_load_file('xml/cinema.xml');
-            echo $xml->film[0]->nom;
-        } else {
-            exit('Echec lors de l\'ouverture du fichier test.xml.');
-        }
-    ?>
+    </div>
+    <br>
+    <div class="row text-center bg-light">
+        <h3>Examen</h3>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="images/v.svg" class="img-fluid" alt="">
+        </div>
+        <div class="col-sm-6 bg-info" style="opacity:70%;">
+            <?php
+                if (file_exists('xml/cinema.xml')) {
+                    $xml = simplexml_load_file('xml/cinema.xml');
+                    echo $xml->film[0]->synopsis;
+                } else {
+                    exit('Echec lors de l\'ouverture du fichier test.xml.');
+                }
+            ?>
+        </div>
+    
+    </div>
+    <br>
+    <div class="row text-center bg-light">
+        <h3>Restaurant</h3>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="images/v.svg" class="img-fluid" alt="">
+        </div>
+        <div class="col-sm-6 bg-info" style="opacity:70%;">
+            <?php
+                if (file_exists('xml/cinema.xml')) {
+                    $xml = simplexml_load_file('xml/cinema.xml');
+                    echo $xml->film[0]->synopsis;
+                } else {
+                    exit('Echec lors de l\'ouverture du fichier test.xml.');
+                }
+            ?>
+        </div>
+    
+    </div>
 </div>
+
 <br>
     
 </body>
