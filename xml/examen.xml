@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE examen SYSTEM "../dtd/examen.dtd">
+<examen code ="E0" titre="Java" mois="Ja" annee="2022" >
+    <questions>
+        <question>
+            <partie>
+                Question 1: ...
+                <partie>Sous partie 1</partie>
+            </partie>
+        </question>
+        <question>
+            <partie>Question 2: ... </partie>
+        </question>
+        <question>
+            <partie>Question 3: ...</partie>
+        </question>
+        <question>
+            <partie>
+                Question 4: Partie I: ...
+                <partie>Sous partie I: ....</partie>
+                <partie>Sous partie II: ...</partie>
+            </partie>
+        </question>
+        <question>
+            <partie>Question 5: Partie I: ...</partie>
+            <partie>Question 5: Partie II: ...</partie>
+        </question>
+        <question>
+            <partie>Question 6: ...</partie>
+        </question>
+        <question>
+            <partie>
+                Question 7: Partie I: 
+                <partie>Sous partie I: ....</partie>
+                <partie>Sous partie II: ...</partie>
+            </partie>
+            <partie>
+                Question 7: Partie II:
+                <partie>Sous-partie I: ...</partie>
+                <partie>Sous-partie II: ...</partie>
+                
+            </partie>
+        </question>
+        <question>
+            <partie>Question 8: ...</partie>
+        </question>
+        <question>
+            <partie>
+                Question 9: ...
+                <partie>Sous partie I: ....</partie>
+                <partie>Sous partie II: ...</partie>
+                <partie>Sous partie III: ....</partie>
+                <partie>Sous partie IV: ...</partie>
+            </partie>
+        </question>
+        <question>
+            <partie>Question 10: ...</partie>
+        </question>
+    </questions>
+</examen>
