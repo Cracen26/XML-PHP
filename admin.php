@@ -65,7 +65,7 @@
 
                             <div class="form-group col-md-12 col-sm-12">
                                 <label for="ajout" >Acteur</label>
-                                <input type="text" style="margin-bottom: 10px;" id="ajout" class="form-control"  name="topic" style="opacity: 90%;">
+                                <input type="text" style="margin-bottom: 10px;" id="ajout" class="form-control"  name="" style="opacity: 90%;">
                                 <div class="div" id="champs"></div>
                                 <input type="button" class="bouton" name="add_button"  onclick="addActor();" value="Add"/>
                             </div>
@@ -106,7 +106,7 @@
                                     </select>
                                 </div>
                                 <div id="projectField"></div>
-                                <input type="button" class="bouton" name="add_button"  onclick="addProjection();" value="Add"/>
+                                <input type="button" class="bouton" name="add_button"  onclick="addProjection();" value="Add Projection"/>
                             </div>
 
                             <div class="col-md-12 text-center mt-5">
@@ -247,7 +247,7 @@
     }
     function addProjection() { 
         let c=document.getElementById('projectField')
-        projection='<div class="form-group bg-success" style="margin-bottom: 10px;padding: 10px;margin-top: 10px;border-radius:1%;"> <label for="topic" >Horaire</label> <input type="text" id="topic" class="form-control" placeholder="horaire" name="topic" style="opacity: 90%;"> <label for="topic" >Jour</label> <select class="form-select" aria-label="Default select example"> <option selected>Lundi</option><option value="1">Mardi</option><option value="2">Mercredi</option><option value="3">Jeudi</option><option value="3">Vendredi</option><option value="3">Samedi</option><option value="3">Dimanche</option></select></div>'
+        projection='<div class="form-group bg-success" style="margin-bottom: 10px;padding: 10px;margin-top: 10px;border-radius:1%;"> <label for="topic" >Horaire</label> <input type="text" id="topic" class="form-control" placeholder="horaire" name="" style="opacity: 90%;"> <label for="topic" >Jour</label> <select class="form-select" aria-label="Default select example" name=""> <option selected>Lundi</option><option value="Mardi">Mardi</option><option value="Mercredi">Mercredi</option><option value="Jeudi">Jeudi</option><option value="Vendredi">Vendredi</option><option value="Samedi">Samedi</option><option value="Dimanche">Dimanche</option></select></div>'
         c.insertAdjacentHTML('afterend', projection);
     } 
     function addQuestion() { 
