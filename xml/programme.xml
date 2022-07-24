@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE films SYSTEM "./dtd/cinema.dtd">
+<!DOCTYPE films SYSTEM "../dtd/cinema.dtd">
 <films>
     <film id="F0" nom="Les brigades du tigre" genre="Policier" duree="2h 5min" realisateur="Jerome Cornuau" lang="VF">
         <acteurs>
@@ -33,7 +33,7 @@
         </projections>
     </film>
 
-    <!-- <film id="F1" nom="Black Panther" genre="Action/Aventure " duree="2h 15m" realisateur="Ryan Coogler" lang="VF">
+    <film id="F1" nom="Black Panther" genre="Action/Aventure " duree="2h 15m" realisateur="Ryan Coogler" lang="VF">
         <acteurs>
             <acteur>C.Boseman</acteur>
             <acteur>M.B.Jordan</acteur>
@@ -152,5 +152,5 @@
                 <horaire>20:20</horaire>
             </projection>
         </projections>
-    </film> -->
+    </film>
 </films>
