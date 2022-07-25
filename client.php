@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Document</title>
+    <title>Client</title>
 </head>
 <body>
 <div class="container">
@@ -33,33 +33,38 @@
                         if (file_exists('./xml/programme.xml')) {
                             $xml = simplexml_load_file('./xml/programme.xml');
                             // $films = new SimpleXMLElement($xml);
-                            $film = $xml->film[0];
+                            foreach($xml->film as $film){
+                                //$film = $xml->film[0];
 
-                            echo '<strong>Nom: </strong>',$film['nom'],"<br>" ;
-                            echo '<strong>Genre:</strong>',$film['genre'],"<br>" ;
-                            echo '<strong>Duree: </strong>',$film['duree'],"<br>" ;
-                            echo '<strong>Realisateur: </strong>',$film['realisateur'],"<br>" ;
-                            echo '<strong>Langue: </strong>',$film['lang'],"<br>","<br>" ;
+                                echo '<strong>Nom: </strong>',$film['nom'],"<br>" ;
+                                echo '<strong>Genre:</strong>',$film['genre'],"<br>" ;
+                                echo '<strong>Duree: </strong>',$film['duree'],"<br>" ;
+                                echo '<strong>Realisateur: </strong>',$film['realisateur'],"<br>" ;
+                                echo '<strong>Langue: </strong>',$film['lang'],"<br>","<br>" ;
 
-                            echo "<strong>Les acteur du film: </strong>";
-                            foreach($xml->film->acteurs->acteur as $acteur ){
-                                echo '<br>',$acteur;
-                            }
-
-                            echo "<br><br>";
-
-                            echo "<strong>Annee: </strong>",$film->annee,"<br>";
-                            echo "<strong>Note presse: </strong>",$film->note['presse'],"<br>";
-                            echo "<strong>Note spectateur: </strong>",$film->note['spectateurs'],"<br><br>";
-
-                            echo "<strong>Synopsis: </strong>",$film->synopsis,"<br><br>";
-
-                            foreach($xml->film->projections->projection as $projection ){
-                                echo "<strong>Jour de projection: </strong>",$projection['jour'],"<br>";
-                                foreach($projection->horaire as $horaire ){
-                                    echo "<strong>Horaire: </strong>",$horaire,"<br>";
+                                echo "<strong>Les acteur du film: </strong>";
+                                foreach($xml->film->acteurs->acteur as $acteur ){
+                                    echo '<br>',$acteur;
                                 }
-                                echo "<br>";
+
+                                echo "<br><br>";
+
+                                echo "<strong>Annee: </strong>",$film->annee,"<br>";
+                                echo "<strong>Note presse: </strong>",$film->note['presse'],"<br>";
+                                echo "<strong>Note spectateur: </strong>",$film->note['spectateurs'],"<br><br>";
+
+                                echo "<strong>Synopsis: </strong>",$film->synopsis,"<br><br>";
+
+                                foreach($xml->film->projections->projection as $projection ){
+                                    echo "<strong>Jour de projection: </strong>",$projection['jour'],"<br>";
+                                    foreach($projection->horaire as $horaire ){
+                                        echo "<strong>Horaire: </strong>",$horaire,"<br>";
+                                    }
+                                    echo "<br>";
+                                }
+
+                                echo '<hr class="rounded" style="border-top: 8px solid #bbb;border-radius: 5px;color:grey;"> <br>';
+
                             }
 
 
