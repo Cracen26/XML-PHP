@@ -33,8 +33,6 @@
                         if (file_exists('./xml/programme.xml')) {
                             $xml = simplexml_load_file('./xml/programme.xml');
                             // $films = new SimpleXMLElement($xml);
-
-
                             $film = $xml->film[0];
 
                             echo '<strong>Nom: </strong>',$film['nom'],"<br>" ;
@@ -66,7 +64,7 @@
 
 
                         } else {
-                            exit('Echec lors de l\'ouverture du fichier testA.xml.');
+                            exit('Echec lors de l\'ouverture du fichier programme.xml.');
                         }
                     ?>
                 </div>
@@ -92,6 +90,28 @@
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
+                <?php
+                        if (file_exists('./xml/examen.xml')) {
+                            $xml = simplexml_load_file('./xml/examen.xml');
+                            // $films = new SimpleXMLElement($xml);
+
+                            echo '<strong>Code: </strong>',$xml['code'],"<br>" ;
+                            echo '<strong>Titre:</strong>',$xml['titre'],"<br>" ;
+                            echo '<strong>Mois: </strong>',$xml['mois'],"<br>" ;
+                            echo '<strong>Annee: </strong>',$xml['annee'],"<br>" ;
+
+                            echo "<strong>Questions: </strong>";
+                            echo "<br>";
+                            foreach($xml->questions->question as $question ){
+                                foreach($question->partie as $partie ){
+                                    echo "<strong>Partie: </strong>",$partie,"<br>";
+                                }
+                            }
+                            echo "<br><br>";
+                        } else {
+                            exit('Echec lors de l\'ouverture du fichier examen.xml.');
+                        }
+                    ?>
 
                 </div>
                 </div>

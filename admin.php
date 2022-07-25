@@ -36,66 +36,66 @@
                 <div class="accordion-body">
                     <div class="row" style="background-image: url(images/cinema.svg);background-size:contain;background-repeat:no-repeat;background-position:center;opacity:100%;height:300px;">
                     </div>
-                    <form action="">
+                    <form action="processCinema.php" method="POST">
                         <div class="row">
                             <div class="form-group col-md-6 col-sm-6">
                             <label for="topic" >ID</label>
-                            <input type="text" id="topic" class="form-control"  name="topic" style="opacity: 90%;">
+                            <input type="text" id="topic" class="form-control"  name="id" style="opacity: 90%;">
                             </div>
                             <div class="form-group col-md-6 col-sm-6">
                             <label for="topic" >Nom</label>
-                            <input type="text" id="topic" class="form-control"  name="topic" style="opacity: 90%;">
+                            <input type="text" id="topic" class="form-control"  name="nom" style="opacity: 90%;">
                             </div>
                             <div class="form-group col-md-6 col-sm-6">
                             <label for="topic" >Genre</label>
-                            <input type="text" id="topic" class="form-control"  name="topic" style="opacity: 90%;">
+                            <input type="text" id="topic" class="form-control"  name="genre" style="opacity: 90%;">
                             </div>
                             <div class="form-group col-md-6 col-sm-6">
                             <label for="topic" >Duree</label>
-                            <input type="text" id="topic" class="form-control"  name="topic" style="opacity: 90%;">
+                            <input type="text" id="topic" class="form-control"  name="duree" style="opacity: 90%;">
                             </div>
                             <div class="form-group col-md-6 col-sm-6">
                             <label for="topic" >Realisateur</label>
-                            <input type="text" id="topic" class="form-control"  name="topic" style="opacity: 90%;">
+                            <input type="text" id="topic" class="form-control"  name="realisateur" style="opacity: 90%;">
                             </div>
                             <div class="form-group col-md-6 col-sm-6">
                             <label for="topic" >Langue</label>
-                            <input type="text" id="topic" class="form-control"  name="topic" style="opacity: 90%;">
+                            <input type="text" id="topic" class="form-control"  name="langue" style="opacity: 90%;">
                             </div>
 
                             <div class="form-group col-md-12 col-sm-12">
                                 <label for="ajout" >Acteur</label>
-                                <input type="text" style="margin-bottom: 10px;" id="ajout" class="form-control"  name="" style="opacity: 90%;">
+                                <input type="text" style="margin-bottom: 10px;" id="ajout" class="form-control"  name="acteur" style="opacity: 90%;">
                                 <div class="div" id="champs"></div>
                                 <input type="button" class="bouton" name="add_button"  onclick="addActor();" value="Add"/>
                             </div>
 
                             <div class="form-group col-md-6 col-sm-6">
                             <label for="topic" >Annee</label>
-                            <input type="number" id="topic" class="form-control" min="1900" max="2099" step="1" value="2016" style="opacity: 90%;"/>
+                            <input type="number" id="topic" class="form-control" name="annee" min="1900" max="2099" step="1" value="2016" style="opacity: 90%;"/>
                             </div>
 
                             <div class="form-group col-md-6 col-sm-6">
                             <label for="topic" >Note</label>
-                            <input type="text" id="topic" class="form-control"  name="topic" style="opacity: 90%;">
+                            <input type="text" id="topic" class="form-control"  name="note" style="opacity: 90%;">
                             </div>
 
                             <div class="form-group col-md-6 col-sm-6">
                             <label for="topic" >Spectateur</label>
-                            <input type="text" id="topic" class="form-control"  name="topic" style="opacity: 90%;">
+                            <input type="text" id="topic" class="form-control"  name="spectateur" style="opacity: 90%;">
                             </div>
                             <div class="form-group col-md-6 col-sm-6">
                             <label for="topic" >Synopsis</label>
-                            <input type="text" id="topic" class="form-control"  name="topic" style="opacity: 90%;">
+                            <input type="text" id="topic" class="form-control"  name="synopsis" style="opacity: 90%;">
                             </div>
                             
                             <div class="form-group col-md-12 col-sm-12 bg-light">
                                 <label for="topic">Projections</label>
                                 <div class="form-group bg-success" style="margin-bottom: 10px;padding: 10px;margin-top: 10px;border-radius:1%;">
                                     <label for="topic" >Horaire</label>
-                                    <input type="text" id="topic" class="form-control" placeholder="horaire" name="topic" style="opacity: 90%;">
+                                    <input type="text" id="topic" class="form-control" placeholder="horaire" name="horaire" style="opacity: 90%;">
                                     <label for="topic" >Jour</label>
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select class="form-select" name="jour" aria-label="Default select example">
                                         <option selected>Lundi</option>
                                         <option value="1">Mardi</option>
                                         <option value="2">Mercredi</option>
@@ -110,7 +110,7 @@
                             </div>
 
                             <div class="col-md-12 text-center mt-5">
-                            <button type="submit" class="btn btn-warning"> Enregistrer</button>
+                            <button type="submit" name='submit' class="btn btn-warning"> Enregistrer</button>
                             </div>
                         </div>
                     </form>
@@ -176,7 +176,7 @@
                 <div class="row" style="background-image: url(images/exam.svg);background-size:contain;background-repeat:no-repeat;background-position:center;opacity:100%;height:300px;">
 
                 </div>
-                <form action="">
+                <form action="processExamen.php" method="POST">
                         <div class="row">
                             <div class="form-group col-md-6 col-sm-6">
                             <label for="topic" >Code</label>
@@ -189,7 +189,7 @@
                             </div>
                             <div class="form-group col-md-6 col-sm-6">
                             <label for="condition" >Mois</label>
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="form-select" name="mois" aria-label="Default select example">
                                         <option selected>Jan</option>
                                         <option value="1">Fev</option>
                                         <option value="2">Ma</option>
@@ -207,7 +207,7 @@
 
                             <div class="form-group col-md-6 col-sm-6">
                             <label for="note" >Annee</label>
-                            <input type="number" id="topic" class="form-control" min="1900" max="2099" step="1" value="2022" style="opacity: 90%;"/>
+                            <input type="number" id="topic" name="annee" class="form-control" min="1900" max="2099" step="1" value="2022" style="opacity: 90%;"/>
                             </div>
 
                             <div class="form-group col-md-12 col-sm-12 bg-light">
@@ -247,7 +247,7 @@
     }
     function addProjection() { 
         let c=document.getElementById('projectField')
-        projection='<div class="form-group bg-success" style="margin-bottom: 10px;padding: 10px;margin-top: 10px;border-radius:1%;"> <label for="topic" >Horaire</label> <input type="text" id="topic" class="form-control" placeholder="horaire" name="" style="opacity: 90%;"> <label for="topic" >Jour</label> <select class="form-select" aria-label="Default select example" name=""> <option selected>Lundi</option><option value="Mardi">Mardi</option><option value="Mercredi">Mercredi</option><option value="Jeudi">Jeudi</option><option value="Vendredi">Vendredi</option><option value="Samedi">Samedi</option><option value="Dimanche">Dimanche</option></select></div>'
+        projection='<div class="form-group bg-success" style="margin-bottom: 10px;padding: 10px;margin-top: 10px;border-radius:1%;"> <label for="topic" >Horaire</label> <input type="text" id="topic" class="form-control" placeholder="horaire" name="horaire" style="opacity: 90%;"> <label for="topic" >Jour</label> <select class="form-select" aria-label="Default select example" name=""> <option selected>Lundi</option><option value="Mardi">Mardi</option><option value="Mercredi">Mercredi</option><option value="Jeudi">Jeudi</option><option value="Vendredi">Vendredi</option><option value="Samedi">Samedi</option><option value="Dimanche">Dimanche</option></select></div>'
         c.insertAdjacentHTML('afterend', projection);
     } 
     function addQuestion() { 
