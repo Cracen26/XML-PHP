@@ -104,13 +104,20 @@
                             echo '<strong>Titre:</strong>',$xml['titre'],"<br>" ;
                             echo '<strong>Mois: </strong>',$xml['mois'],"<br>" ;
                             echo '<strong>Annee: </strong>',$xml['annee'],"<br>" ;
+                            echo '<hr class="rounded" style="border-top: 8px solid #bbb;border-radius: 5px;backgroud-color:grey;">';
 
                             echo "<strong>Questions: </strong>";
                             echo "<br>";
-                            foreach($xml->questions->question as $question ){
-                                foreach($question->partie as $partie ){
-                                    echo "<strong>Partie: </strong>",$partie,"<br>";
-                                }
+                            $int = 1;
+                            foreach($xml->questions->question->xpath('//partie') as $partie){
+
+
+                                echo "<strong> ==> : </strong>",$partie,"<br>";
+
+                                // foreach($question->xpath('//partie') as $partie ){
+                                //     echo "<strong>",(string)$int,"  : </strong>",$partie,"<br>";
+                                // }
+                                $int++;
                             }
                             echo "<br><br>";
                         } else {
@@ -123,7 +130,8 @@
             </div>
         </div>
     </div>
-    
+
+     
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 

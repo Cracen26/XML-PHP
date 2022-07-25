@@ -4,57 +4,57 @@
     <questions>
         <question>
             <partie>
-                Question 1: ...
-                <partie>Sous partie 1</partie>
+                Question 1: Quelle est la capitale du Senegal ?
+                <partie>Sous partie I : Justifier votre reponse.</partie>
             </partie>
         </question>
         <question>
-            <partie>Question 2: ... </partie>
+            <partie>Question 2: Quelle est la capitale du Gabon ?</partie>
         </question>
         <question>
-            <partie>Question 3: ...</partie>
+            <partie>Question 3: Quelle est la capitale de la France ? </partie>
         </question>
         <question>
             <partie>
-                Question 4: Partie I: ...
-                <partie>Sous partie I: ....</partie>
-                <partie>Sous partie II: ...</partie>
+                Question 4: Partie I: Donner le nombre d'etats des US ?
+                <partie>Sous partie I: Citer les ?</partie>
+                <partie>Sous partie II: Donner leur superficies ?</partie>
             </partie>
         </question>
         <question>
-            <partie>Question 5: Partie I: ...</partie>
-            <partie>Question 5: Partie II: ...</partie>
+            <partie>Question 5: Partie I: Dans quel continent se trouve l'australie ?</partie>
+            <partie>Question 5: Partie II: Donner sa capitale ?</partie>
         </question>
         <question>
-            <partie>Question 6: ...</partie>
+            <partie>Question 6: Donner la capitale de la Russie ?</partie>
         </question>
         <question>
             <partie>
-                Question 7: Partie I: 
-                <partie>Sous partie I: ....</partie>
-                <partie>Sous partie II: ...</partie>
+                Question 7: Partie I:   La coree du sud ...? 
+                <partie>Sous partie I: Donner sa capitale?  </partie>
+                <partie>Sous partie II:  Qui est l'actuel dirigeant </partie>
             </partie>
             <partie>
-                Question 7: Partie II:
-                <partie>Sous-partie I: ...</partie>
-                <partie>Sous-partie II: ...</partie>
+                Question 7: Partie I: L'Espagne ....
+                <partie>Sous-partie I: Quelle est sa capitale ? </partie>
+                <partie>Sous-partie II: Qui est l'actuel dirigeant ?</partie>
                 
             </partie>
         </question>
         <question>
-            <partie>Question 8: ...</partie>
+            <partie>Question 8: Donner la capitale de la Malaisie ?</partie>
         </question>
         <question>
             <partie>
-                Question 9: ...
-                <partie>Sous partie I: ....</partie>
-                <partie>Sous partie II: ...</partie>
-                <partie>Sous partie III: ....</partie>
-                <partie>Sous partie IV: ...</partie>
+                Question 9: L'Afrique du sud ...
+                <partie>Sous partie I: Quelle est sa capitale ? </partie>
+                <partie>Sous partie II:  Qui est son president ?</partie>
+                <partie>Sous partie III:  Quelle est sa superficie ?</partie>
+                <partie>Sous partie IV: Combien d'habitant ?</partie>
             </partie>
         </question>
         <question>
-            <partie>Question 10: ...</partie>
+            <partie>Question 10: Donner la capitale du Bresil ?</partie>
         </question>
     </questions>
 </examen>
