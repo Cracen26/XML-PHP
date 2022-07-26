@@ -83,7 +83,73 @@
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-
+                        <?php
+                            if (file_exists('./xml/restauration.xml')) {
+                                $xml = simplexml_load_file('./xml/restauration.xml');
+                        
+                                $information = $xml->information;
+                                $carte = $xml->carte;
+                                $menus = $xml->menus;
+                        
+                                
+                                echo '<strong> Informations </strong> <br><br>';
+                                echo '<strong>Nom: </strong>',$information->nom,"<br>" ;
+                                echo '<strong>Restaurateur: </strong>',$information->restaurateur,"<br>" ;
+                                echo '<strong>Telephone: </strong>',$information->coordonnees,"<br>" ;
+                                echo '<strong>Adresse: </strong>',$information->adresse,"<br>" ;
+                                echo '<strong>Description: </strong> <br>','<u>',$information->description->liste,"</u><br>" ;
+                                echo $information->description->paragraphe->parties,"<br>" ;
+                        
+                                echo '<br><hr class="rounded" style="border-top: 8px solid #bbb;border-radius: 5px;color:grey;"> <br>';
+                        
+                                echo '<strong> Carte </strong> <br><br>';
+                                $int = 1;
+                                foreach($carte->plat as $plat){
+                                    echo '<u>Item ',$int,'</u> <br>';
+                                    echo '<strong>Categorie: </strong>',$plat['indication'],"<br>" ;
+                                    foreach($plat->description_pm->partie as $partie){
+                                        echo '<strong>Description: </strong>',$partie,"<br>";
+                                    }
+                                    echo '<strong>Prix: </strong>',$plat->prix,$plat->prix['devise'],"<br>";
+                                    $int++;
+                                }
+                        
+                                echo '<br><hr class="rounded" style="border-top: 8px solid #bbb;border-radius: 5px;color:grey;"> <br>';
+                                echo '<strong> Menus </strong> <br><br>';
+                        
+                                foreach ($menus->menu as $menu){
+                                    echo '<strong>Titre: </strong>',$menu['titre'],"<br>" ;
+                                    foreach($menu->description_pm->partie as $partie){
+                                        echo '<strong>Description: </strong>',$partie,"<br>";
+                                    }
+                                    echo "<br>";
+                                    $num = 1;
+                                    foreach($menu->element as $element){
+                                        foreach($carte->plat as $plat){
+                                            if((string)$plat['id'] == (string)$element['ref'] ){
+                                                echo '<u>Item ',$num,'</u> <br>';
+                                                echo '<strong>Categorie: </strong>',$plat['indication'],"<br>" ;
+                                                foreach($plat->description_pm->partie as $partie){
+                                                    echo '<strong>Description: </strong>',$partie,"<br>";
+                                                }
+                                                echo '<strong>Prix: </strong>',$plat->prix,$plat->prix['devise'],"<br>";
+                                                $num++;
+                                            }
+                                            
+                                        }
+                                    }
+                                    echo "<br>";
+                                    echo "<br>";
+                        
+                                    echo '<strong>Prix total: </strong>',$menu->prix,$menu->prix['devise'],"<br>";
+                                    echo "<br>";
+                        
+                                }
+                            } else {
+                                exit('Echec lors de l\'ouverture du fichier examen.xml.');
+                            }
+                            
+                        ?>  
                 </div>
                 </div>
             </div>
@@ -95,34 +161,34 @@
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                <?php
-                        if (file_exists('./xml/examen.xml')) {
-                            $xml = simplexml_load_file('./xml/examen.xml');
-                            // $films = new SimpleXMLElement($xml);
+                    <?php
+                            if (file_exists('./xml/examen.xml')) {
+                                $xml = simplexml_load_file('./xml/examen.xml');
+                                // $films = new SimpleXMLElement($xml);
 
-                            echo '<strong>Code: </strong>',$xml['code'],"<br>" ;
-                            echo '<strong>Titre:</strong>',$xml['titre'],"<br>" ;
-                            echo '<strong>Mois: </strong>',$xml['mois'],"<br>" ;
-                            echo '<strong>Annee: </strong>',$xml['annee'],"<br>" ;
-                            echo '<hr class="rounded" style="border-top: 8px solid #bbb;border-radius: 5px;backgroud-color:grey;">';
+                                echo '<strong>Code: </strong>',$xml['code'],"<br>" ;
+                                echo '<strong>Titre:</strong>',$xml['titre'],"<br>" ;
+                                echo '<strong>Mois: </strong>',$xml['mois'],"<br>" ;
+                                echo '<strong>Annee: </strong>',$xml['annee'],"<br>" ;
+                                echo '<hr class="rounded" style="border-top: 8px solid #bbb;border-radius: 5px;backgroud-color:grey;">';
 
-                            echo "<strong>Questions: </strong>";
-                            echo "<br>";
-                            $int = 1;
-                            foreach($xml->questions->question->xpath('//partie') as $partie){
+                                echo "<strong>Questions: </strong>";
+                                echo "<br>";
+                                $int = 1;
+                                foreach($xml->questions->question->xpath('//partie') as $partie){
 
 
-                                echo "<strong> ==> : </strong>",$partie,"<br>";
+                                    echo "<strong> ==> : </strong>",$partie,"<br>";
 
-                                // foreach($question->xpath('//partie') as $partie ){
-                                //     echo "<strong>",(string)$int,"  : </strong>",$partie,"<br>";
-                                // }
-                                $int++;
+                                    // foreach($question->xpath('//partie') as $partie ){
+                                    //     echo "<strong>",(string)$int,"  : </strong>",$partie,"<br>";
+                                    // }
+                                    $int++;
+                                }
+                                echo "<br><br>";
+                            } else {
+                                exit('Echec lors de l\'ouverture du fichier examen.xml.');
                             }
-                            echo "<br><br>";
-                        } else {
-                            exit('Echec lors de l\'ouverture du fichier examen.xml.');
-                        }
                     ?>
 
                 </div>
