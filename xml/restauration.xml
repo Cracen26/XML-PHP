@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE  restaurant SYSTEM "../dtd/restauration.dtd">
+<restaurant>
+    <information>
+        <coordonnees> 33 890 65 90 </coordonnees>
+        <nom>Mohtra</nom>
+        <adresse> Almadie - Dakar</adresse>
+        <restaurateur>Chef Diallo</restaurateur>
+        <description>
+            <liste>
+                - Cuisine asiatique 
+                - Cuisine african 
+                - Cuisine occidentale
+            </liste>
+            <paragraphe>
+                <parties importance="NORMAL">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam iaculis rutrum risus a scelerisque. Cras varius tellus tortor, sit amet auctor orci iaculis eu. Integer vitae posuere eros. Fusce id pretium massa. Quisque pellentesque venenatis mattis. Mauris ornare accumsan lacus, ut gravida ante fringilla nec.</parties>
+                <images idIm="I0" position="centre">URL/Image</images>
+            </paragraphe>
+        </description>
+    </information>
+    <carte>
+            <plat id="JUI" indication="plat">
+                <description_pm>
+                    <partie importance="NORMAL">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam iaculis rutrum risus a scelerisque. Cras varius tellus tortor, sit amet auctor orci iaculis eu. Integer vitae posuere eros. Fusce id pretium massa. Quisque pellentesque venenatis mattis. Mauris ornare accumsan lacus, ut gravida ante fringilla nec.
+                    </partie>
+                </description_pm>
+               <prix devise="fcfa">8000</prix>
+            </plat>
+            <plat id="JUIM" indication="dessert">
+                <description_pm>
+                    <partie importance="NORMAL">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam iaculis rutrum risus a scelerisque. Cras varius tellus tortor, sit amet auctor orci iaculis eu. Integer vitae posuere eros. Fusce id pretium massa. Quisque pellentesque venenatis mattis. Mauris ornare accumsan lacus, ut gravida ante fringilla nec.
+                    </partie>
+                </description_pm>
+               <prix devise="fcfa">9000</prix>
+            </plat>
+            <plat id="JUIL" indication="entree">
+                <description_pm>
+                    <partie importance="NORMAL">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam iaculis rutrum risus a scelerisque. Cras varius tellus tortor, sit amet auctor orci iaculis eu. Integer vitae posuere eros. Fusce id pretium massa. Quisque pellentesque venenatis mattis. Mauris ornare accumsan lacus, ut gravida ante fringilla nec.
+                    </partie>
+                </description_pm>
+               <prix devise="fcfa">7000</prix>
+            </plat>
+    </carte>
+    <menus>
+        <menu titre="Menu enfant">
+            <description_pm>
+                <partie importance="NORMAL">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam iaculis rutrum risus a scelerisque. Cras varius tellus tortor, sit amet auctor orci iaculis eu. Integer vitae posuere eros. Fusce id pretium massa. Quisque pellentesque venenatis mattis. Mauris ornare accumsan lacus, ut gravida ante fringilla nec.
+                </partie>
+            </description_pm> 
+            <prix devise="fcfa">50000</prix>
+            <element ref= "JUIL"/>
+            <element ref= "JUI"/>
+            <element ref= "JUIM"/>
+        </menu>
+        <menu titre="Menu couple">
+            <description_pm>
+                <partie importance="NORMAL">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam iaculis rutrum risus a scelerisque. Cras varius tellus tortor, sit amet auctor orci iaculis eu. Integer vitae posuere eros. Fusce id pretium massa. Quisque pellentesque venenatis mattis. Mauris ornare accumsan lacus, ut gravida ante fringilla nec.
+                </partie>
+            </description_pm>
+            <prix devise="fcfa">80000</prix>
+            <element ref= "JUIL"/>
+            <element ref= "JUIM"/>
+
+        </menu>
+    </menus>
+</restaurant>
